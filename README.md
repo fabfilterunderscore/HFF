@@ -1,25 +1,73 @@
-# HFF — Les Codeurs
+# TP Git — Association Les Codeurs
 
-On est trois étudiants en première année : Flavien, Hadrien et Fabrice. Pour ce TP, on crée un petit site d’association pour apprendre à travailler ensemble avec Git et GitHub.
+Petit site réalisé pour notre TP de Git en première année. On travaille à trois : Flavien, Hadrien et Fabrice.
 
-## Qui fait quoi ?
+Le but est d’apprendre à travailler sur le même projet avec des branches, des commits et des pull requests, puis à gérer les conflits et corriger nos erreurs.
 
-- **Flavien** s’occupe de la page projets.
-- **Hadrien** prépare la page contact.
-- **Fabrice** ajoute les mentions légales.
+## Prérequis
 
-Chacun travaille sur sa branche, puis on relit et on rassemble nos modifications.
+- Un navigateur web.
+- Git installé.
+- Un éditeur de code, comme Visual Studio Code.
 
-## Le site
+Aucune dépendance à installer ni serveur à lancer.
 
-Le site comprend une page d’accueil, une page projets, une page contact et les mentions légales. Pour le consulter, il suffit d’ouvrir `index.html` dans un navigateur.
+## Installation
 
-## Ce qu’on travaille pendant le TP
+Cloner le dépôt :
 
-On apprend à créer des branches, faire des commits et utiliser les pull requests. On doit aussi résoudre des conflits, tester le rebase et réparer des erreurs avec `restore`, `stash` et `revert`.
+```bash
+git clone https://github.com/fabfilterunderscore/HFF.git
+```
 
-À la fin, on marquera la version stable avec le tag `v1.0.0`.
+Entrer dans le dossier :
 
-## Le rendu
+```bash
+cd HFF
+```
 
-On rendra le lien du dépôt, trois captures de l’historique, un journal de nos commandes et les réponses aux questions du TP.
+Ouvrir le projet dans Visual Studio Code :
+
+```bash
+code .
+```
+
+## Lancement
+
+Ouvrir `index.html` dans un navigateur en double-cliquant dessus.
+
+## Structure du projet
+
+Les pages sont ajoutées au fur et à mesure du TP.
+
+```text
+HFF/
+├── index.html      # Page d'accueil
+├── projets.html    # Présentation des projets
+├── contact.html    # Page contact
+├── mentions.html   # Mentions légales
+├── .gitignore      # Fichiers ignorés par Git
+└── README.md       # Présentation du projet
+```
+
+## Répartition du travail
+
+- Flavien : page projets et pied de page.
+- Hadrien : page contact et résolution du conflit sur le titre.
+- Fabrice : mentions légales, réparation du commit cassé et tag final.
+
+## Contribution
+
+Chacun travaille sur sa branche et publie ses modifications. Un autre membre relit la pull request avant de la fusionner dans `main`.
+
+## Exercices du TP
+
+- Créer et publier des branches.
+- Résoudre un conflit de fusion.
+- Faire un rebase et résoudre son conflit.
+- Utiliser `restore`, `stash` et `revert`.
+- Créer le tag `v1.0.0` pour la version stable.
+
+## Rendu
+
+Le rendu comprend le lien du dépôt, trois captures de l’historique, un journal des commandes et les réponses aux questions du TP.
